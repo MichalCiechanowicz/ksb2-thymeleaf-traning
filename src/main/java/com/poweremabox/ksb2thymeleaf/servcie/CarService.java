@@ -20,6 +20,9 @@ public class CarService {
         carList.add(new Car("Mazda", "CX-5"));
 
     }
+    public void addCar(Car car){
+        carList.add(car);
+    }
 
     public List<Car> getCarList() {
         return carList;

@@ -30,5 +30,11 @@ public class Car {
         this.model = model;
     }
 
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
