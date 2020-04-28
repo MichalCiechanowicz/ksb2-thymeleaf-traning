@@ -8,7 +8,13 @@
 <h1>Kurs Thymeleaf</h1>
 <p> Hello World</p>
 <p th:text="${name}"></p>
-<p th:text="${car.getMake()}"></p>
-<p th:text="${car.getModel()}"></p>
+<p th:text="${car1.getMake()}"></p>
+<p th:text="${car1.getModel()}"></p>
+
+<tr th:each="car: ${cars}">
+    <td th:text="${car.getModel()}"/><br>
+    <td th:text="${car.getMake()}"/><br>
+    <p>============================</p>
+</tr>
 </body>
 </html>
